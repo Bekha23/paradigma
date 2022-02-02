@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Paradigma</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <span class="logo">
+      <img src="https://unvent.com.ua/image/catalog/123logo.png" title="Unvent" alt="Unvent" class="img-fluid">
+      <p>Профессиональный монтаж дымоходов любой сложности на территории Киева и Киевской обл.</p>
+    </span>
+    <div id="map"></div>
+    <p class="address">Украина, Киев, Васильковская 30</p>
+
+    <button>Консультация инженера</button>
+    <div class="phone">
+      <i class="fas fa-phone"></i> +38 067 242-58-58
+    </div>
+    <div class="messenger">
+      <div class="one"><i class="fab fa-viber"></i></div>
+        <div class="two"><i class="fab fa-telegram-plane"></i></div>
+          <div class="three"><i class="fab fa-whatsapp"></i></div>
+    </div>
+  </header>
+  <main>
+    <div class="nav">
+      <ul>
+        <li><a href="#">Калькулятор</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Наши новости</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Консультация</a></li>
+        <li><a href="#">Преимущества</a></li>
+        <li><a href="#">Производство</a></li>
+        <li><a href="#">Вопрос-ответ</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+    <p><span>Монтаж дымоходов из нержавеющей стали</span> для частных домов и предприятий</p>
+
+    <div class="bulletins">
+      <div class="bullet_one">
+        <div class="vl"></div>
+        <h1>15</h1><b>лет устанавливаем дымоходы</b> для частных лиц и организаций
+      </div>
+      <div class="bullet_two">
+        <div class="vl_1"></div>
+        <b>Бесплатный выезд инженера</b> в пределах 30 км. от Киева
+      </div>
+      <div class="bullet_three">
+        <div class="vl_2"></div>
+        <b>Монтаж под ключ от 1 дня,</b> в наличии все разрешительные документы
+      </div>
+    </div>
+
+    <div class="text_btn">Рассчитайте стоимость монтажа вашего дымохода за 1 минуту и   <b>получите скидку 15%</b>
+      <button><i class="fas fa-calculator"></i>Рассчитать стоимость монтажа и получить скидку</button>
+    </div>
+
+    <section class="gallery">
+      <h2>Лицензии и сертификаты в наличии</h2>
+      <div id="slider">
+        <div><img src="img/3.png" alt="foto_one"></div>
+        <div><img src="img/3.png" alt="foto_two"></div>
+        <div><img src="img/3.png" alt="foto_three"></div>
+        <div><img src="img/3.png" alt="img/foto_four"></div>
+      </div>
+    </section>
+
+    <img class="img_fon" src="img/img.png" alt="foto">
+
+  </main>
+
+  <script>
+  function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+      center: new google.maps.LatLng(51.5, -0.2), zoom:10 };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?kay=AIzaSyDR8P72HMX3zllKeeZt8X89djWMEu0LSX8&callback=myMap" async defer></script>
+  <script src="https://kit.fontawesome.com/2a0a40cde7.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

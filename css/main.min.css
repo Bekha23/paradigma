@@ -1,0 +1,343 @@
+@font-face {
+  font-family: "Uni Neue Heavy";
+  src: url("/fonts/UniNeueHeavy.ttf");
+}
+@font-face {
+  font-family: "Uni Neue Bold";
+  src: url("/fonts/UniNeueBold.ttf");
+}
+@font-face {
+  font-family: "Uni Neue Light";
+  src: url("/fonts/UniNeueLight.ttf");
+}
+@font-face {
+  font-family: "Uni Neue Regular";
+  src: url("/fonts/UniNeueRegular.ttf");
+}
+@font-face {
+  font-family: "Uni Neue Bold-italic";
+  src: url("/fonts/UniNeueBold-italic.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../img/img1.png");
+  background-size: 900px 1200px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+header {
+  width: auto;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .logo img {
+  width: 150px;
+  height: 100px;
+}
+header .logo img:hover {
+  cursor: pointer;
+}
+header .logo p {
+  width: 280px;
+  height: 100px;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  color: #282728;
+  font-family: "Uni Neue Regular";
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+header #map {
+  float: left;
+  width: 76px;
+  height: 76px;
+  border-radius: 38px;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  margin-left: 2rem;
+}
+header #map:hover {
+  cursor: pointer;
+}
+header .address {
+  width: 140px;
+  height: 50px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 21px;
+  color: #282728;
+  font-family: "Uni Neue Regular";
+  margin-left: 1rem;
+  margin-top: 1.2rem;
+}
+header .address:hover {
+  cursor: pointer;
+  color: #fe504f;
+}
+header button {
+  width: 244px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: #313d4b;
+  margin-left: 5rem;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Uni Neue Bold";
+  text-align: center;
+}
+header button:hover {
+  cursor: pointer;
+  background-color: #252c34;
+}
+header .phone {
+  font-size: 22px;
+  line-height: 22px;
+  color: #282728;
+  font-family: "Uni Neue Bold-italic";
+  margin-left: 5rem;
+  height: 30px;
+  width: 250px;
+}
+header .phone:hover {
+  cursor: pointer;
+}
+header .phone i {
+  color: #fe504f;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+header .messenger {
+  margin-top: 2rem;
+  margin-left: -200px;
+  width: 200px;
+  height: 50px;
+}
+header .messenger .one, header .messenger .two, header .messenger .three {
+  width: 49px;
+  height: 49px;
+  border-radius: 24px;
+  background-color: #7460f3;
+  display: inline-block;
+  margin-left: 5px;
+  text-align: center;
+}
+header .messenger .one:hover, header .messenger .two:hover, header .messenger .three:hover {
+  cursor: pointer;
+  background: #563fef;
+}
+header .messenger .one.two, header .messenger .two.two, header .messenger .three.two {
+  background-color: #00a2f2;
+}
+header .messenger .one.two:hover, header .messenger .two.two:hover, header .messenger .three.two:hover {
+  cursor: pointer;
+  background: #0590d5;
+}
+header .messenger .one.three, header .messenger .two.three, header .messenger .three.three {
+  background-color: #25d266;
+}
+header .messenger .one.three:hover, header .messenger .two.three:hover, header .messenger .three.three:hover {
+  cursor: pointer;
+  background: #27b75c;
+}
+header .messenger .one i, header .messenger .two i, header .messenger .three i {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+main {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  background-image: url("../img/fon1.png");
+  background-size: 1200px 1500px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+main .nav ul {
+  margin-left: -15px;
+}
+main .nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 25px;
+}
+main .nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 60px;
+  color: #282728;
+  font-weight: bold;
+  font-family: "Uni Neue Bold";
+  text-transform: uppercase;
+}
+main .nav ul li a:hover {
+  color: #0590d5;
+}
+main p {
+  font-size: 60px;
+  line-height: 68px;
+  color: #282728;
+  width: 60%;
+  margin-top: 50px;
+}
+main p span {
+  font-weight: bold;
+  font-family: "Uni Neue Bold";
+}
+main .bulletins {
+  width: 60%;
+  display: inline-block;
+  margin-top: 60px;
+}
+main .bulletins .bullet_one, main .bulletins .bullet_two, main .bulletins .bullet_three {
+  width: 350px;
+  height: auto;
+  float: left;
+}
+main .bulletins .bullet_one.bullet_one, main .bulletins .bullet_one.bullet_two, main .bulletins .bullet_one.bullet_three, main .bulletins .bullet_two.bullet_one, main .bulletins .bullet_two.bullet_two, main .bulletins .bullet_two.bullet_three, main .bulletins .bullet_three.bullet_one, main .bulletins .bullet_three.bullet_two, main .bulletins .bullet_three.bullet_three {
+  font-size: 18px;
+  color: #282728;
+  font-weight: bold;
+  font-family: "Uni Neue Light";
+}
+main .bulletins .bullet_one.bullet_one .vl, main .bulletins .bullet_one.bullet_one .vl_1, main .bulletins .bullet_one.bullet_one .vl_2, main .bulletins .bullet_one.bullet_two .vl, main .bulletins .bullet_one.bullet_two .vl_1, main .bulletins .bullet_one.bullet_two .vl_2, main .bulletins .bullet_one.bullet_three .vl, main .bulletins .bullet_one.bullet_three .vl_1, main .bulletins .bullet_one.bullet_three .vl_2, main .bulletins .bullet_two.bullet_one .vl, main .bulletins .bullet_two.bullet_one .vl_1, main .bulletins .bullet_two.bullet_one .vl_2, main .bulletins .bullet_two.bullet_two .vl, main .bulletins .bullet_two.bullet_two .vl_1, main .bulletins .bullet_two.bullet_two .vl_2, main .bulletins .bullet_two.bullet_three .vl, main .bulletins .bullet_two.bullet_three .vl_1, main .bulletins .bullet_two.bullet_three .vl_2, main .bulletins .bullet_three.bullet_one .vl, main .bulletins .bullet_three.bullet_one .vl_1, main .bulletins .bullet_three.bullet_one .vl_2, main .bulletins .bullet_three.bullet_two .vl, main .bulletins .bullet_three.bullet_two .vl_1, main .bulletins .bullet_three.bullet_two .vl_2, main .bulletins .bullet_three.bullet_three .vl, main .bulletins .bullet_three.bullet_three .vl_1, main .bulletins .bullet_three.bullet_three .vl_2 {
+  width: 23px;
+  height: 5px;
+  -webkit-transform: rotate(-23deg);
+          transform: rotate(-23deg);
+  background-color: #fd5751;
+}
+main .bulletins .bullet_one.bullet_one .vl.vl_1, main .bulletins .bullet_one.bullet_one .vl.vl_2, main .bulletins .bullet_one.bullet_one .vl_1.vl_1, main .bulletins .bullet_one.bullet_one .vl_1.vl_2, main .bulletins .bullet_one.bullet_one .vl_2.vl_1, main .bulletins .bullet_one.bullet_one .vl_2.vl_2, main .bulletins .bullet_one.bullet_two .vl.vl_1, main .bulletins .bullet_one.bullet_two .vl.vl_2, main .bulletins .bullet_one.bullet_two .vl_1.vl_1, main .bulletins .bullet_one.bullet_two .vl_1.vl_2, main .bulletins .bullet_one.bullet_two .vl_2.vl_1, main .bulletins .bullet_one.bullet_two .vl_2.vl_2, main .bulletins .bullet_one.bullet_three .vl.vl_1, main .bulletins .bullet_one.bullet_three .vl.vl_2, main .bulletins .bullet_one.bullet_three .vl_1.vl_1, main .bulletins .bullet_one.bullet_three .vl_1.vl_2, main .bulletins .bullet_one.bullet_three .vl_2.vl_1, main .bulletins .bullet_one.bullet_three .vl_2.vl_2, main .bulletins .bullet_two.bullet_one .vl.vl_1, main .bulletins .bullet_two.bullet_one .vl.vl_2, main .bulletins .bullet_two.bullet_one .vl_1.vl_1, main .bulletins .bullet_two.bullet_one .vl_1.vl_2, main .bulletins .bullet_two.bullet_one .vl_2.vl_1, main .bulletins .bullet_two.bullet_one .vl_2.vl_2, main .bulletins .bullet_two.bullet_two .vl.vl_1, main .bulletins .bullet_two.bullet_two .vl.vl_2, main .bulletins .bullet_two.bullet_two .vl_1.vl_1, main .bulletins .bullet_two.bullet_two .vl_1.vl_2, main .bulletins .bullet_two.bullet_two .vl_2.vl_1, main .bulletins .bullet_two.bullet_two .vl_2.vl_2, main .bulletins .bullet_two.bullet_three .vl.vl_1, main .bulletins .bullet_two.bullet_three .vl.vl_2, main .bulletins .bullet_two.bullet_three .vl_1.vl_1, main .bulletins .bullet_two.bullet_three .vl_1.vl_2, main .bulletins .bullet_two.bullet_three .vl_2.vl_1, main .bulletins .bullet_two.bullet_three .vl_2.vl_2, main .bulletins .bullet_three.bullet_one .vl.vl_1, main .bulletins .bullet_three.bullet_one .vl.vl_2, main .bulletins .bullet_three.bullet_one .vl_1.vl_1, main .bulletins .bullet_three.bullet_one .vl_1.vl_2, main .bulletins .bullet_three.bullet_one .vl_2.vl_1, main .bulletins .bullet_three.bullet_one .vl_2.vl_2, main .bulletins .bullet_three.bullet_two .vl.vl_1, main .bulletins .bullet_three.bullet_two .vl.vl_2, main .bulletins .bullet_three.bullet_two .vl_1.vl_1, main .bulletins .bullet_three.bullet_two .vl_1.vl_2, main .bulletins .bullet_three.bullet_two .vl_2.vl_1, main .bulletins .bullet_three.bullet_two .vl_2.vl_2, main .bulletins .bullet_three.bullet_three .vl.vl_1, main .bulletins .bullet_three.bullet_three .vl.vl_2, main .bulletins .bullet_three.bullet_three .vl_1.vl_1, main .bulletins .bullet_three.bullet_three .vl_1.vl_2, main .bulletins .bullet_three.bullet_three .vl_2.vl_1, main .bulletins .bullet_three.bullet_three .vl_2.vl_2 {
+  margin-left: -20px;
+}
+main .bulletins .bullet_one.bullet_one h1, main .bulletins .bullet_one.bullet_two h1, main .bulletins .bullet_one.bullet_three h1, main .bulletins .bullet_two.bullet_one h1, main .bulletins .bullet_two.bullet_two h1, main .bulletins .bullet_two.bullet_three h1, main .bulletins .bullet_three.bullet_one h1, main .bulletins .bullet_three.bullet_two h1, main .bulletins .bullet_three.bullet_three h1 {
+  font-size: 72px;
+  color: #282728;
+  font-family: "Uni Neue Heavy";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  margin-right: 10px;
+  margin-top: -15px;
+  margin-left: 20px;
+}
+main .bulletins .bullet_one.bullet_one b, main .bulletins .bullet_one.bullet_two b, main .bulletins .bullet_one.bullet_three b, main .bulletins .bullet_two.bullet_one b, main .bulletins .bullet_two.bullet_two b, main .bulletins .bullet_two.bullet_three b, main .bulletins .bullet_three.bullet_one b, main .bulletins .bullet_three.bullet_two b, main .bulletins .bullet_three.bullet_three b {
+  font-weight: bold;
+  font-family: "Uni Neue Bold";
+}
+main .bulletins .bullet_one.bullet_two, main .bulletins .bullet_two.bullet_two, main .bulletins .bullet_three.bullet_two {
+  width: 200px;
+  margin-left: 3%;
+}
+main .bulletins .bullet_one.bullet_three, main .bulletins .bullet_two.bullet_three, main .bulletins .bullet_three.bullet_three {
+  width: 200px;
+  margin-left: 3%;
+}
+main .text_btn {
+  font-size: 18px;
+  line-height: 28px;
+  color: #282728;
+  font-family: "Uni Neue Regular";
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+main .text_btn button {
+  width: 425px;
+  height: 100px;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(0px 19px 24.5px rgba(254, 88, 81, 0.1)) drop-shadow(0px 4px 0px #e63c3c);
+          filter: drop-shadow(0px 19px 24.5px rgba(254, 88, 81, 0.1)) drop-shadow(0px 4px 0px #e63c3c);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fd4f4f), to(#fd734f));
+  background-image: linear-gradient(0deg, #fd4f4f 0%, #fd734f 100%);
+  display: inline-block;
+  float: left;
+  font-size: 17px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "Uni Neue Regular";
+  text-transform: uppercase;
+  text-align: left;
+  padding-right: 50px;
+  margin-top: 10px;
+}
+main .text_btn button i {
+  color: #e5e5e5;
+  font-size: 38px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+main .text_btn button:hover {
+  cursor: pointer;
+  background: #ca4a2b;
+}
+main .gallery {
+  width: 350px;
+  margin-left: 23%;
+  left: 100px;
+  margin-top: -50px;
+  margin-left: 500px;
+  margin-bottom: 100px;
+}
+main .gallery h2 {
+  font-size: 17px;
+  line-height: 75px;
+  color: #282728;
+  font-weight: bold;
+  font-family: "Uni Neue Bold";
+}
+main .gallery div {
+  margin-right: 5px;
+  cursor: pointer;
+}
+main .gallery div img {
+  width: 80px;
+  margin-left: 25px;
+}
+main .gallery .arrow-prev,
+main .gallery .arrow-next {
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+main .gallery .arrow-prev:hover,
+main .gallery .arrow-next:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+main .gallery .arrow-prev {
+  left: -20px;
+}
+main .gallery .arrow-next {
+  right: -30px;
+}
+main .img_fon {
+  float: right;
+  margin-top: -700px;
+  width: 500px;
+}
